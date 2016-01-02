@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/map_background_pi"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/place_info_image"
+            android:src="@drawable/aganzy_photo_pi"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:maxLength="14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/place_info__name"
+            android:text="Place Name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#3d8fb9"
+            android:layout_toRightOf="@+id/place_info_image"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/place_address"
+            android:text="Place Adress"
+            android:textSize="15dp"
+            android:layout_below="@+id/place_info__name"
+            android:layout_toRightOf="@+id/place_info_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Rate"
+            android:layout_below="@+id/place_info_image"
+            android:id="@+id/place_rate_text"
+            android:layout_marginTop="20dp"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:id="@+id/place_rate"
+            android:stepSize="0.1"
+            android:isIndicator="true"
+            android:layout_below="@+id/place_info_image"
+            android:layout_toRightOf="@+id/place_rate_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Rate"
+            android:layout_below="@+id/place_rate"
+            android:id="@+id/my_rate_text"
+            android:layout_marginTop="8dp"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:id="@+id/my_rate"
+            android:stepSize="0.1"
+            android:isIndicator="true"
+            android:layout_below="@+id/place_rate"
+            android:layout_toRightOf="@+id/my_rate_text"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="26dp"/>
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:background="@drawable/calltoaction_pi"
+            android:id="@+id/place_info_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:background="@drawable/favorite_filled_pi"
+            android:id="@+id/place_info_favorite"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/my_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        >
+
+        <com.ahmeddonkl.superbuzz.Miscellaneous.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:background="#ffffff"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+

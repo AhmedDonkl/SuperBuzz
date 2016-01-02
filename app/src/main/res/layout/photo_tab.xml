@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin">
+
+    <GridView
+        android:background="@android:color/transparent"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/place_photos_grid"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="1"
+        />
+</LinearLayout>

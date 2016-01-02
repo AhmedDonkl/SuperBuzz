@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/user_image_comment"
+        android:src="@drawable/pic_profile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name_comment"
+        android:text="User Name"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/user_image_comment"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedback_comment"
+        android:text="User Feedback"
+        android:textSize="14dp"
+        android:layout_below="@+id/user_name_comment"
+        android:layout_toRightOf="@+id/user_image_comment"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp" />
+
+    <RatingBar
+        android:stateListAnimator="@anim/abc_fade_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:id="@+id/place_rate_comment"
+        android:stepSize="0.1"
+        android:isIndicator="true"
+        android:layout_below="@+id/feedback_comment"
+        android:layout_toRightOf="@+id/user_image_comment"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+</RelativeLayout>

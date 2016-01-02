@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:src="@drawable/home_pic_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/place_image_profile"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/place_name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El Fayrouz"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/place_category_profile"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resturant"
+            android:singleLine="true"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

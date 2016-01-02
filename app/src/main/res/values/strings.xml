@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SuperBuzz</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="facebook_app_id">1496715410620523</string>
+    <string name="twitter_consumer_key">vQ5gDzUWuF2CcGZogboYQMbYN</string>
+    <string name="twitter_consumer_secret">1roRSjuCkPj1gODcq0SkfcafBMOWRNUaGeir2loyoeqFeDyHx8</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_place__data">Place_Data</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_profile">Profile</string>
+
+
+</resources>
